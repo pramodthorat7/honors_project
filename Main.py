@@ -15,7 +15,8 @@ alert_threshold = 0.4  # Confidence threshold to trigger an alert
 alert_classes = ['Knife', 'Rifle','Handgun','Axe','Shotgun']  # Classes to send alerts for
 
 # Function to send an alert message and image to Telegram
-def send_telegram_alert(message, image_path):
+# Remove the # from 19th Line to Active the Telegram bot.
+# def send_telegram_alert(message, image_path):
     url = f"https://api.telegram.org/bot{bot_token}/sendPhoto"
     for chat_id in chat_ids:
         with open(image_path, 'rb') as photo:
